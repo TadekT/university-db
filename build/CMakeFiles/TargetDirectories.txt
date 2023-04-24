@@ -1,0 +1,3 @@
+/home/ted/Desktop/vs/university-db/build/CMakeFiles/StudentDB.dir
+/home/ted/Desktop/vs/university-db/build/CMakeFiles/edit_cache.dir
+/home/ted/Desktop/vs/university-db/build/CMakeFiles/rebuild_cache.dir
