@@ -23,7 +23,7 @@ void Student::setName(std::string n)
 }
 
 // getters
-void Student::getAllInfo()
+void Student::getAllInfo() const
 {
     std::cout << "Name : " << name_ << "\n"
               << "Surname : " << surname_ << "\n"

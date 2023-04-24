@@ -19,7 +19,7 @@ public:
     // setters
     void setName(std::string);
     // getters
-    void getAllInfo();
+    void getAllInfo() const;
     //void addStudent();
 };
 
