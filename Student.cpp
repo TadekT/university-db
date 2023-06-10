@@ -5,30 +5,20 @@
 
 // constructors
 Student::Student()
-    : indexNumber_(-1)
+    : indexNumber_(0)
 {
     std::cout << "Error , need more data\n\n";
-};
+}
 
-Student::Student(
-    std::string n, std::string sn, std::string a, int in, long p, std::string g)
-    : name_(n), surname_(sn), addres_(a), indexNumber_(in), pesel_(p), gender_(g){
-        std::cout << "Create student " << std::endl;
-    };
+Student::Student
+    (std::string name, std::string surname, std::string adress, int indexNumber, int personalID, std::string gander)
+    : name_(name), surname_(surname), addres_(surname), indexNumber_(indexNumber), personalID_(personalID), gender_(gander) {}
 
 // setters
 void Student::setName(std::string n)
 {
     name_ = n;
 }
-
+void Student::getAllInfo(){std::cout<<"My name is : "<<name_<<"\n"; };
 // getters
-void Student::getAllInfo() const
-{
-    std::cout << "Name : " << name_ << "\n"
-              << "Surname : " << surname_ << "\n"
-              << "Addres : " << addres_ << "\n"
-              << "Index Number : " << indexNumber_ << "\n"
-              << "Pesel : " << pesel_ << "\n"
-              << "Gender : " << gender_ << "\n";
-}
+
